@@ -8,3 +8,5 @@ dp.directive 'ngDatepicker', ->
               <input type="text"><span class="add-on"><i class="icon-th"></i></span>
             </div>
             """
+  link: (scope, element, attrs, controller)->
+    element.datepicker()

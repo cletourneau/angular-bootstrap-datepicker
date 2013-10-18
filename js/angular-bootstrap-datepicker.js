@@ -9,7 +9,10 @@
       restrict: 'A',
       replace: true,
       transclude: true,
-      template: "<div class=\"input-append date\">\n  <input type=\"text\"><span class=\"add-on\"><i class=\"icon-th\"></i></span>\n</div>"
+      template: "<div class=\"input-append date\">\n  <input type=\"text\"><span class=\"add-on\"><i class=\"icon-th\"></i></span>\n</div>",
+      link: function(scope, element, attrs, controller) {
+        return element.datepicker();
+      }
     };
   });
 
