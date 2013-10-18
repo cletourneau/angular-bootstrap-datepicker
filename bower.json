@@ -1,0 +1,23 @@
+{
+  "name": "angular-datepicker",
+  "version": "0.1.0",
+  "description": "some description",
+  "authors": [
+    "Carl Letourneau"
+  ],
+  "license": "Apache License, Version 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-datepicker": "1.2.0",
+    "bootstrap": "2.3.2"
+  },
+  "devDependencies": {
+    "angular": "1.0.8"
+  }
+}

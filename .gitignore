@@ -1,0 +1,6 @@
+node_modules/**
+bower_components/**
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/watcherTasks.xml
+*.iws
