@@ -20,12 +20,18 @@ module.exports = function(config) {
       'bower_components/jasmine-jquery/lib/jasmine-jquery.js',
       'bower_components/bootstrap/docs/assets/js/bootstrap.js',
       'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
-      'test/**/*.spec.coffee'
+
+      'js/*.js',
+
+      'test/**/*.spec.coffee',
     ],
 
+
+    // generates js files from coffeescript files and html template
     preprocessors: {
-      '**/*.coffee': 'coffee'
+      'test/**/*.coffee': 'coffee'
     },
+
 
     // list of files to exclude
     exclude: [
