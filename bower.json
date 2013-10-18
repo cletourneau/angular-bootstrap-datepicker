@@ -18,6 +18,8 @@
     "bootstrap": "2.3.2"
   },
   "devDependencies": {
-    "angular": "1.0.8"
+    "angular": "1.0.8",
+    "jasmine-jquery": "1.5.91",
+    "angular-mocks": "1.0.8"
   }
 }

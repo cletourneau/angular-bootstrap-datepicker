@@ -9,15 +9,17 @@ module.exports = function(config) {
 
 
     // frameworks to use
-    frameworks: ['ng-scenario'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
     files: [
       'bower_components/angular/angular.js',
-      //'bower_components/bootstrap/docs/assets/js/bootstrap.js',
-      //'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
+      'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/jquery/jquery.js',
+      'bower_components/jasmine-jquery/lib/jasmine-jquery.js',
+      'bower_components/bootstrap/docs/assets/js/bootstrap.js',
+      'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
       'test/**/*.spec.coffee'
     ],
 
