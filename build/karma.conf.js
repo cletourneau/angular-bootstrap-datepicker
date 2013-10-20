@@ -23,7 +23,7 @@ module.exports = function(config) {
 
         'js/*.js',
 
-        'test/**/*.spec.coffee',
+        'test/unit/**/*.spec.coffee'
     ],
 
 

@@ -18,6 +18,8 @@
     "karma": "0.10.2",
     "karma-ng-scenario": "0.1.0",
     "phantomjs": "1.9.1-0",
-    "coffee-script": "1.6.3"
+    "coffee-script": "1.6.3",
+    "zombie": "2.0.0-alpha24",
+    "jasmine-node": "1.11.0"
   }
 }
