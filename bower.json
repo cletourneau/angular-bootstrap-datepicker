@@ -1,9 +1,10 @@
 {
-  "name": "angular-datepicker",
+  "name": "angular-bootstrap-datepicker",
   "version": "0.1.0",
-  "description": "some description",
+  "description": "Angular Boostrap Datepicker based on https://github.com/eternicode/bootstrap-datepicker",
+  "main": ["dist/angular-bootstrap-dapicker.js", "dist/angular-bootstrap-dapicker.css"],
   "authors": [
-    "Carl Letourneau"
+    "Carl Létourneau"
   ],
   "license": "Apache License, Version 2.0",
   "ignore": [
@@ -14,10 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-datepicker": "1.2.0",
-    "bootstrap": "2.3.2"
+    "jquery" : ">=1.7.1",
+    "bootstrap" : ">=2.0.4 <3.0"
   },
   "devDependencies": {
+    "bootstrap-datepicker": "1.2.0",
     "angular": "1.0.8",
     "jasmine-jquery": "1.5.91",
     "angular-mocks": "1.0.8"

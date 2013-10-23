@@ -1,7 +1,7 @@
 describe 'angular-bootstrap-datepicker', ->
 
   beforeEach ->
-    browser().navigateTo('/test/system/test.html')
+    browser().navigateTo('/demo.html')
 
   it 'can update scope', ->
     element('.add-on').click()
