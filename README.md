@@ -45,7 +45,9 @@ To use the directive, use the following code :
 ```
 
 `ng-datepicker` : Indicates you want your input as a date picker.
+
 `ng-options` : Object of the controller scope containing the [options](http://bootstrap-datepicker.readthedocs.org/en/latest/options.html) for your date picker.
+
 `ng-model` : Variable of the controller scope to store the date. The date is currently store as a string, formatted according to the one set in ng-options.
 
 
