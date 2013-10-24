@@ -23,6 +23,13 @@ module.exports = (grunt) ->
         src: ['bower_components/bootstrap-datepicker/css/datepicker.css']
         dest: 'dist/angular-bootstrap-datepicker.css'
 
+    uglify:
+      options:
+        mangle: false
+      main:
+        files:
+          'dist/angular-bootstrap-datepicker.min.js': ['dist/angular-bootstrap-datepicker.js']
+
     watch:
       options:
         livereload: true
@@ -31,10 +38,10 @@ module.exports = (grunt) ->
         atBegin: true
       coffee:
         files: 'src/**/*.coffee'
-        tasks: ['coffee:compile', 'concat']
+        tasks: ['coffee:compile', 'concat', 'uglify:main']
 
 
   grunt.loadNpmTasks 'grunt-contrib-concat'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
-#  grunt.loadNpmTasks 'grunt-contrib-connect'
+  grunt.loadNpmTasks 'grunt-contrib-uglify'
