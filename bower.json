@@ -2,7 +2,7 @@
   "name": "angular-bootstrap-datepicker",
   "version": "0.2.0",
   "description": "Angular Boostrap Datepicker based on https://github.com/eternicode/bootstrap-datepicker",
-  "main": ["dist/angular-bootstrap-dapicker.js", "dist/angular-bootstrap-dapicker.min.js", "dist/angular-bootstrap-dapicker.css"],
+  "main": ["dist/angular-bootstrap-datepicker.js", "dist/angular-bootstrap-datepicker.min.js", "dist/angular-bootstrap-datepicker.css"],
   "authors": [
     "Carl Létourneau"
   ],
