@@ -12,6 +12,8 @@ dp.directive 'ngDatepicker', ->
             </div>
             """
   link: (scope, element)->
+    scope.canChangeModel = true
+
     element.datepicker(scope.ngOptions).on('changeDate', (e)->
 
       defaultFormat = $.fn.datepicker.defaults.format
@@ -20,7 +22,12 @@ dp.directive 'ngDatepicker', ->
       language = scope.ngOptions.language || defaultLanguage
 
       scope.$apply -> scope.ngModel = $.fn.datepicker.DPGlobal.formatDate(e.date, format, language)
+    ).on('show', ->
+      scope.canChangeModel = false
+    ).on('hide', ->
+      scope.canChangeModel = true
     )
 
     scope.$watch 'ngModel', (newValue)->
-      element.datepicker('update', newValue)
+      if scope.canChangeModel
+        element.datepicker('update', newValue)
