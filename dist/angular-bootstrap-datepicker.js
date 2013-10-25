@@ -2100,7 +2100,7 @@ dp.directive('ngDatepicker', function() {
     },
     template: "<div class=\"input-append date\">\n  <input type=\"text\"><span class=\"add-on\"><i class=\"icon-th\"></i></span>\n</div>",
     link: function(scope, element) {
-      scope.canChangeModel = true;
+      scope.inputHasFocus = false;
       element.datepicker(scope.ngOptions).on('changeDate', function(e) {
         var defaultFormat, defaultLanguage, format, language;
         defaultFormat = $.fn.datepicker.defaults.format;
@@ -2110,13 +2110,14 @@ dp.directive('ngDatepicker', function() {
         return scope.$apply(function() {
           return scope.ngModel = $.fn.datepicker.DPGlobal.formatDate(e.date, format, language);
         });
-      }).on('show', function() {
-        return scope.canChangeModel = false;
-      }).on('hide', function() {
-        return scope.canChangeModel = true;
+      });
+      element.find('input').on('focus', function() {
+        return scope.inputHasFocus = true;
+      }).on('blur', function() {
+        return scope.inputHasFocus = false;
       });
       return scope.$watch('ngModel', function(newValue) {
-        if (scope.canChangeModel) {
+        if (!scope.inputHasFocus) {
           return element.datepicker('update', newValue);
         }
       });

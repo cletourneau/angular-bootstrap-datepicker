@@ -12,7 +12,7 @@ dp.directive 'ngDatepicker', ->
             </div>
             """
   link: (scope, element)->
-    scope.canChangeModel = true
+    scope.inputHasFocus = false
 
     element.datepicker(scope.ngOptions).on('changeDate', (e)->
 
@@ -22,12 +22,14 @@ dp.directive 'ngDatepicker', ->
       language = scope.ngOptions.language || defaultLanguage
 
       scope.$apply -> scope.ngModel = $.fn.datepicker.DPGlobal.formatDate(e.date, format, language)
-    ).on('show', ->
-      scope.canChangeModel = false
-    ).on('hide', ->
-      scope.canChangeModel = true
+    )
+
+    element.find('input').on('focus', ->
+      scope.inputHasFocus = true
+    ).on('blur', ->
+      scope.inputHasFocus = false
     )
 
     scope.$watch 'ngModel', (newValue)->
-      if scope.canChangeModel
+      if not scope.inputHasFocus
         element.datepicker('update', newValue)
