@@ -6,7 +6,8 @@ At the moment, only the ["Component"](http://eternicode.github.io/bootstrap-date
 
 ## Demo
 
-You can see the [demo](http://eternicode.github.io/bootstrap-datepicker/) for the original bootstrap-datepicker.
+Here's a working [jsfiddle](http://jsfiddle.net/cletourneau/kGGCZ/)
+A more dynamic [demo](http://eternicode.github.io/bootstrap-datepicker/) of all the options is available for the original bootstrap-datepicker.
 
 
 ## Installation
