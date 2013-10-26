@@ -1,4 +1,4 @@
-# angular-bootstrap-datepicker - [AngularJS](http://angularjs.org/) directives the [bootstrap-datepicker](https://github.com/eternicode/bootstrap-datepicker)
+# angular-bootstrap-datepicker - [AngularJS](http://angularjs.org/) directives for the [bootstrap-datepicker](https://github.com/eternicode/bootstrap-datepicker)
 
 At the moment, only the ["Component"](http://eternicode.github.io/bootstrap-datepicker/?markup=component) type is supported.
 
@@ -6,9 +6,7 @@ At the moment, only the ["Component"](http://eternicode.github.io/bootstrap-date
 
 ## Demo
 
-http://www.codesimple.ca/angular-bootstrap-datepicker/
-
-You can also check the [demo](http://eternicode.github.io/bootstrap-datepicker/) for the original bootstrap-datepicker.
+You can see the [demo](http://eternicode.github.io/bootstrap-datepicker/) for the original bootstrap-datepicker.
 
 
 ## Installation
