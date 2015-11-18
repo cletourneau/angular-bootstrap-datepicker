@@ -40,14 +40,14 @@ Make sure you use `charset="utf-8"` in your script tag if your browser (or those
 To use the directive, use the following code :
 
 ```html
-<input type="text" ng-datepicker ng-options="datepickerOptions" ng-model="date">
+<input type="text" ng-datepicker oi-options="datepickerOptions" ng-model="date">
 ```
 
 `ng-datepicker` : Indicates you want your input as a date picker.
 
-`ng-options` : Object of the controller scope containing the [options](http://bootstrap-datepicker.readthedocs.org/en/latest/options.html) for your date picker.
+`oi-options` : Object of the controller scope containing the [options](http://bootstrap-datepicker.readthedocs.org/en/latest/options.html) for your date picker.
 
-`ng-model` : Variable of the controller scope to store the date. The date is currently store as a string, formatted according to the one set in ng-options.
+`ng-model` : Variable of the controller scope to store the date. The date is currently store as a string, formatted according to the one set in oi-options.
 
 
 For a working example, see https://github.com/cletourneau/angular-bootstrap-datepicker/blob/master/example/demo.html
