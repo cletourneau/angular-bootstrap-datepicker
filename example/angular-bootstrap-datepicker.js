@@ -2095,18 +2095,18 @@ dp.directive('ngDatepicker', function() {
     restrict: 'A',
     replace: true,
     scope: {
-      ngOptions: '=',
+      oiOptions: '=',
       ngModel: '='
     },
     template: "<div class=\"input-append date\">\n  <input type=\"text\"><span class=\"add-on\"><i class=\"icon-th\"></i></span>\n</div>",
     link: function(scope, element) {
       scope.inputHasFocus = false;
-      element.datepicker(scope.ngOptions).on('changeDate', function(e) {
+      element.datepicker(scope.oiOptions).on('changeDate', function(e) {
         var defaultFormat, defaultLanguage, format, language;
         defaultFormat = $.fn.datepicker.defaults.format;
-        format = scope.ngOptions.format || defaultFormat;
+        format = scope.oiOptions.format || defaultFormat;
         defaultLanguage = $.fn.datepicker.defaults.language;
-        language = scope.ngOptions.language || defaultLanguage;
+        language = scope.oiOptions.language || defaultLanguage;
         return scope.$apply(function() {
           return scope.ngModel = $.fn.datepicker.DPGlobal.formatDate(e.date, format, language);
         });
