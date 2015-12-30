@@ -15,8 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery" : ">=1.7.1",
-    "bootstrap" : ">=2.0.4 <3.0"
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6"
   },
   "devDependencies": {
     "bootstrap-datepicker": "1.2.0",
