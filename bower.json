@@ -1,6 +1,6 @@
 {
   "name": "angular-bootstrap-datepicker",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Angular Boostrap Datepicker based on https://github.com/eternicode/bootstrap-datepicker",
   "main": ["dist/angular-bootstrap-datepicker.js", "dist/angular-bootstrap-datepicker.min.js", "dist/angular-bootstrap-datepicker.css"],
   "authors": [
