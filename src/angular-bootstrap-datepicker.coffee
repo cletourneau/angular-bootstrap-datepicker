@@ -4,7 +4,7 @@ dp.directive 'ngDatepicker', ->
   restrict: 'A'
   replace: true
   scope:
-    ngOptions: '='
+    ngDatepickerOptions: '='
     ngModel: '='
   template: """
             <div class="input-append date">
@@ -14,12 +14,12 @@ dp.directive 'ngDatepicker', ->
   link: (scope, element)->
     scope.inputHasFocus = false
 
-    element.datepicker(scope.ngOptions).on('changeDate', (e)->
+    element.datepicker(scope.ngDatepickerOptions).on('changeDate', (e)->
 
       defaultFormat = $.fn.datepicker.defaults.format
-      format = scope.ngOptions.format || defaultFormat
+      format = scope.ngDatepickerOptions.format || defaultFormat
       defaultLanguage = $.fn.datepicker.defaults.language
-      language = scope.ngOptions.language || defaultLanguage
+      language = scope.ngDatepickerOptions.language || defaultLanguage
 
       scope.$apply -> scope.ngModel = $.fn.datepicker.DPGlobal.formatDate(e.date, format, language)
     )
